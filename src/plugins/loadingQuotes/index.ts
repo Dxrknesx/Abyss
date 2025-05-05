@@ -23,7 +23,7 @@ import definePlugin, { OptionType } from "@utils/types";
 import presetQuotesText from "file://quotes.txt";
 
 const presetQuotes = presetQuotesText.split("\n").map(quote => /^\s*[^#\s]/.test(quote) && quote.trim()).filter(Boolean) as string[];
-const noQuotesQuote = "Did you really disable all loading quotes? What a buffoon you are...";
+const noQuotesQuote = "[Midnight] Booting...";
 
 const settings = definePluginSettings({
     replaceEvents: {
@@ -57,6 +57,7 @@ export default definePlugin({
     name: "LoadingQuotes",
     description: "Replace Discords loading quotes",
     authors: [Devs.Ven, Devs.KraXen72, Devs.UlyssesZhan],
+    essential: true,
 
     settings,
 
