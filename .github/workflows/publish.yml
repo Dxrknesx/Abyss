@@ -6,7 +6,7 @@ on:
 
 jobs:
     Publish:
-        if: github.repository == 'Dxrknesx/Abyss'
+        if: github.repository == 'Dxrknesx/Midnight'
         runs-on: ubuntu-latest
 
         steps:
